@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e -x # abort on error
-./configure --prefix=$PREFIX --disable-devel --enable-optimizations
+./configure --prefix=$PREFIX --disable-devel --enable-optimizations CXXFLAGS=-D__STDC_FORMAT_MACROS
 make
 make check
 make install-strip
