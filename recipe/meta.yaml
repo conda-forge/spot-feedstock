@@ -1,4 +1,4 @@
-{% set version = "2.10.1" %}
+{% set version = "2.10.2" %}
 
 package:
   name: spot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://www.lrde.epita.fr/dload/spot/spot-{{ version }}.tar.gz
-  sha256: 38002989fc8e3725841a0537665bb2d5dfc259d2e09358100322c38f4c7481ad
+  sha256: c1c4ba4f1c87919b3d2749280c7e9959a7d82a4a43a97a19eca0a3ca22605066
 
 build:
   number: 0
@@ -38,7 +38,7 @@ about:
   license_file: debian/copyright
   summary: Platform for manipulation of LTL formulas and ω-automata.
   description: |
-    Spot is a C++14 library for LTL, ω-automata manipulation, and model
+    Spot is a C++17 library for LTL, ω-automata manipulation, and model
     checking.  It also comes with a Python interface, and command-line
     tools.
   doc_url: https://spot.lrde.epita.fr/
