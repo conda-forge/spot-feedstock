@@ -1,4 +1,4 @@
-{% set version = "2.10.4" %}
+{% set version = "2.10.5" %}
 
 package:
   name: spot
@@ -6,10 +6,10 @@ package:
 
 source:
   url: http://www.lrde.epita.fr/dload/spot/spot-{{ version }}.tar.gz
-  sha256: e8629cdb6cce83077826960cd01ece5213daaf9a283d6f62aaf69afa0623478a
+  sha256: e34b9a305d558d3302256a9965ee5f4401b220dcb2be5244c64b3126a7844a2a
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
 
 requirements:
