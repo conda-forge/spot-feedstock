@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e -x # abort on error
-./configure --prefix=$PREFIX --disable-devel --enable-optimizations
+# See https://conda-forge.org/docs/maintainer/knowledge_base.html#newer-c-features-with-old-sdk
+# for an explanation of -D_LIBCPP_DISABLE_AVAILABILITY
+./configure --prefix=$PREFIX --disable-devel --enable-optimizations CPPFLAGS=-D_LIBCPP_DISABLE_AVAILABILITY
 make
 make check
 make install-strip
