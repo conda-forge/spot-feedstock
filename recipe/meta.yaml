@@ -34,7 +34,7 @@ test:
     - test {{ version }} = "`python -c 'import spot; print(spot.version())'`"
 
 about:
-  home: https://spot.lrde.epita.fr
+  home: https://spot.lre.epita.fr
   license: GPL-3.0-or-later
   license_file: debian/copyright
   summary: Platform for manipulation of LTL formulas and ω-automata.
@@ -42,8 +42,8 @@ about:
     Spot is a C++17 library for LTL, ω-automata manipulation, and model
     checking.  It also comes with a Python interface, and command-line
     tools.
-  doc_url: https://spot.lrde.epita.fr/
-  dev_url: https://gitlab.lrde.epita.fr/spot/spot/
+  doc_url: https://spot.lre.epita.fr/
+  dev_url: https://gitlab.lre.epita.fr/spot/spot/
 
 extra:
   recipe-maintainers:
