@@ -4,7 +4,7 @@ set -e -x # abort on error
 # for an explanation of -D_LIBCPP_DISABLE_AVAILABILITY
 ./configure --prefix=$PREFIX --disable-devel --enable-optimizations CPPFLAGS=-D_LIBCPP_DISABLE_AVAILABILITY
 make
-make check || { cat */test-suite.log; exit 1; }
+make check || { cat buddy/src/test-suite.log; cat tests/test-suite.log; exit 1; }
 make install-strip
 mkdir -p $PREFIX/share/doc/spot/examples
 cp tests/python/[a-z]*.ipynb $PREFIX/share/doc/spot/examples
