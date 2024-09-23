@@ -1,12 +1,12 @@
-{% set version = "2.12" %}
+{% set version = "2.12.1" %}
 
 package:
   name: spot
   version: {{ version }}
 
 source:
-  url: http://www.lrde.epita.fr/dload/spot/spot-{{ version }}.tar.gz
-  sha256: 26ba076ad57ec73d2fae5482d53e16da95c47822707647e784d8c7cec0d10455
+  url: https://www.lre.epita.fr/dload/spot/spot-{{ version }}.tar.gz
+  sha256: 5477c08d4e1d062f164c2e486a83556925d07d70f2180de706af7aa949c6ff5c
 
 build:
   number: 2
@@ -15,8 +15,8 @@ build:
 requirements:
   build:
     - make
-    - python                             # [build_platform != target_platform]
-    - cross-python_{{ target_platform }} # [build_platform != target_platform]
+    - python                              # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
