@@ -2,7 +2,7 @@
 
 package:
   name: spot
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://www.lre.epita.fr/dload/spot/spot-{{ version }}.tar.gz
