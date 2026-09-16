@@ -9,7 +9,7 @@ source:
   sha256: 688463cb2fa393c51d9cf938fb01a716b91e4c8122aeb52fd116a3bbfddab869
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -42,7 +42,7 @@ about:
   license_file: debian/copyright
   summary: Platform for manipulation of LTL formulas and ω-automata.
   description: |
-    Spot is a C++17 library for LTL, ω-automata manipulation, and model
+    Spot is a C++20 library for LTL, ω-automata manipulation, and model
     checking.  It also comes with a Python interface, and command-line
     tools.
   doc_url: https://spot.lre.epita.fr/
